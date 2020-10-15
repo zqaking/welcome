@@ -1,3 +1,4 @@
+* BUBBLE-SORT
 ```伪代码
 BUBBLE-SORT(A)
   for i = 1 to A:length - 1 do
