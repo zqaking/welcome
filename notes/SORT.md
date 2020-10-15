@@ -29,7 +29,7 @@ SHELLSORT(A, D) {
 ```
 
 * HEAPSORT
-···
+```伪代码
 MAX-HEAPIFY(A, i) {
   l = LEFT(i)
   r = RIGHT(i)
@@ -54,4 +54,4 @@ HEAPSORT(A) {
     A.heap-size = A.heap-size - 1
     MAXHEAPIFY(A, l)
 }
-···
+```
