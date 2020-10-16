@@ -1,9 +1,9 @@
 * BUBBLESORT
-```伪代码
+```c
 BUBBLE-SORT(A)
-  for i = 1 to A.length - 1 do
+  for i = 1 to A.length-1 do
     noswap = TRUE
-  for j = A.length - 1 downto i do
+  for j = A.length-1 downto i do
     if A[j+1] < A[j] then
       A[j] <-> A [j+1]
       noswap = FALSE
@@ -14,13 +14,13 @@ BUBBLE-SORT(A)
 ```c
 SHELL-PASS(A, d) {
   for i = d + 1 to n do
-    if A[i] < A[i -d] then
+    if A[i] < A[i-d] then
       key = A[i]      //A[i] is to inserted in the correct position
       j = i - d
       while j > 0 and key < A[j] do
-        A[j + d] = A[j]
+        A[j+d] = A[j]
         j = j -d
-      A[j + d] = key
+      A[j+d] = key
 }
 SHELLSORT(A, D) {
   for increment in D do
@@ -45,7 +45,7 @@ MAX-HEAPIFY(A, i) {
 BUILD-MAX-HEAP(A) {
   A.heap-size = A.length
   for i = ⌊A.length⌋/2 downto 1
-    MAX-HEAPIF(A, i)
+    MAX-HEAPIFY(A, i)
 }
 HEAPSORT(A) {
   BUILD-MAX-HEAP
@@ -66,12 +66,12 @@ QUICKSORT(A，p, r) {
 }
 PARTITION(A, p, r) {
   x = A[r]
-  i = p - 1
-  for j = p to r - 1
+  i = p-1
+  for j = p to r-1
     if A[j] <= x
       i = i + 1
       A[i] <-> A[j]
-  A[i + 1] <-> A[r]
-  return i + 1   
+  A[i+1] <-> A[r]
+  return i+1   
 }
 ```
