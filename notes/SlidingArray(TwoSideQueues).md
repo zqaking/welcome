@@ -1,3 +1,4 @@
+```c
 #include<stdio.h>
 int left[1000000];
 int right[1000000];
@@ -37,3 +38,32 @@ int main() {
 
     return 0;
 }
+```
+
+```c
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* maxSlidingWindow(int* nums, int numsSize, int k, int* returnSize){
+    int i, j, max;
+    int MIN = -2147483648;
+
+    int* R = (int*)malloc(sizeof(int) * (numsSize));
+    max = MIN;
+    for (int i = numsSize - 1; i >= 0; i--) {
+        if (i % k == k-1) max = MIN;
+        if (nums[i] > max) max = nums[i];
+        R[i] = max;
+    }
+    
+    for (int i = 0; i < numsSize; i++) {
+        if (i % k == 0) max = MIN;
+        if (nums[i] > max) max = nums[i];
+        if (i - k + 1 >= 0 && max > R[i - k + 1]) R[i - k + 1] = max;
+    }
+
+    *returnSize = numsSize - k + 1;
+
+    return R;
+}
+```
