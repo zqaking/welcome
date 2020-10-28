@@ -82,13 +82,13 @@ COUNTINGSORT(A, B, k) {
   for i = 0 to k do
     C[i] = 0
   for j = 1 to A:length do
-    C[A[j]] = C[A[j]]+1
+    C[A[j]] = C[A[j]] + 1
     //C[i] now contains the number of elements equal to i.
   for i = 1 to k do
-    C[i]=C[i]+C[i-1]
+    C[i]=C[i] + C[i-1]
     //C[i] now contains the number of elements less than or equal to i.
   for j = A:length to 1 do
     B[C[A[j]]] = A[j]
-    C[A[j]] = C[A[j]]-1
+    C[A[j]] = C[A[j]] - 1
 }
 ```
