@@ -1,8 +1,12 @@
-[**中序遍历**](#inorder)
+[**中序遍历(inorder-tree-walk)**](#inorder)
 
-[**先序遍历**](#preorder)
+[**先序遍历(preorder-tree-walk)**](#preorder)
 
-[**后序遍历**](#postorder)
+[**后序遍历(postorder-tree-walk)**](#postorder)
+
+[**查找(tree_search)**](#tree_search)
+
+[**迭代版本的查找(iterative_tree_search)**](#iterative_tree_search)
 
 <div id = "inorder"></div>
 
@@ -40,6 +44,8 @@ postorder_tree_walk(x) {
 }
 ```
 
+<div id = "tree_search"></div>
+
 * tree-search
 ```c
 tree_search(x, k) {
@@ -50,6 +56,8 @@ tree_search(x, k) {
   rlse return tree_search(x.right, k)
 }
 ```
+
+<div id = "iterative_tree_search"></div>
 
 * iterative-tree-search
 ```c
