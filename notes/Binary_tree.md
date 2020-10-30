@@ -1,4 +1,8 @@
-* inorder-tree-walk
+[**中序遍历**](#inorder)
+[**先序遍历**](#preorder)
+[**后序遍历**](#postorder)
+
+* inorder-tree-walk <div id = "inorder"></div>
 ```c
 inorder_tree_walk(x) {
   if x != NULL
@@ -8,7 +12,7 @@ inorder_tree_walk(x) {
 }
 ```
 
-* preorder-tree-walk
+* preorder-tree-walk <div id = "preorder"></div>
 ```c
 preorder_tree_walk(x) {
   if x != NULL
@@ -18,7 +22,7 @@ preorder_tree_walk(x) {
 }
 ```
 
-* postorder_tree_walk
+* postorder_tree_walk <div id = "postorder"></div>
 ```c
 postorder_tree_walk(x) {
   if x != NULL
