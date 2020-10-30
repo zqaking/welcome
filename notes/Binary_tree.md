@@ -38,3 +38,14 @@ tree_search(x, k) {
   rlse return tree_search(x.right, k)
 }
 ```
+
+* iterative-tree-search
+```c
+iterative_tree_search(x, k) {
+  while x!= NULL and k != x.key
+    if k < x.key
+      x = x.left
+    else x = x.right
+  return x
+}
+```
