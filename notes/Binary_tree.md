@@ -5,6 +5,7 @@
 [**后序遍历**](#postorder)
 
 <div id = "inorder"></div>
+
 * inorder-tree-walk 
 ```c
 inorder_tree_walk(x) {
@@ -16,6 +17,7 @@ inorder_tree_walk(x) {
 ```
 
 <div id = "preorder"></div>
+
 * preorder-tree-walk 
 ```c
 preorder_tree_walk(x) {
@@ -27,6 +29,7 @@ preorder_tree_walk(x) {
 ```
 
 <div id = "postorder"></div>
+
 * postorder_tree_walk 
 ```c
 postorder_tree_walk(x) {
